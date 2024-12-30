@@ -12,13 +12,13 @@ import javax.xml.transform.sax.SAXSource
 import javax.xml.transform.stream.StreamResult
 import javax.xml.transform.stream.StreamSource
 
-import org.xml.sax.XMLReader
 import org.xml.sax.InputSource
+import org.xml.sax.XMLReader
 
 import com.kms.katalon.core.configuration.RunConfiguration
 
 /**
- * 
+ *
  */
 
 Path projectDir = Paths.get(RunConfiguration.getProjectDir())
@@ -28,7 +28,7 @@ Path stylesheet = projectDir.resolve("src/test/xslt/log-compaction.xsl")
 Source xsltSource = new StreamSource(stylesheet.toFile())
 
 // input XML
-Path log = projectDir.resolve("Reports/20241230_155630/healthcare-tests - TS_RegressionTest/20241230_155630/execution0.log")
+Path log = projectDir.resolve("Reports/20241230_231944/healthcare-tests - TS_RegressionTest/20241230_231944/execution0.log")
 Source xmlSource = createSAXSourceIgnoringDTD(log)
 
 // output XML

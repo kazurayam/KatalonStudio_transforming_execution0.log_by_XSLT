@@ -46,7 +46,8 @@ WebUI.comment('When he fills in valid information in Appointment page')
 
 WebUI.click(findTestObject('Page_CuraAppointment/btn_BookAppointment'))
 
-WebUI.verifyTextPresent('Appointment Confirmation', false)
+//WebUI.verifyTextPresent('Appointment Confirmation', false)
+WebUI.verifyTextNotPresent('Appointment Confirmation', false)   // this statement fails intentionally
 
 WebUI.comment('Then he should be able to book a new appointment')
 
@@ -56,6 +57,7 @@ if (true) {
 
     WebUI.verifyMatch('Yes', WebUI.getText(findTestObject('Page_AppointmentConfirmation/lbl_HospitalReadmission')), false)
 
+	
     WebUI.verifyMatch('Medicaid', WebUI.getText(findTestObject('Page_AppointmentConfirmation/lbl_Program')), false)
 
     WebUI.verifyMatch('27/12/2016', WebUI.getText(findTestObject('Page_AppointmentConfirmation/lbl_VisitDate')), false)
@@ -63,6 +65,8 @@ if (true) {
     WebUI.verifyMatch('Please make appointment as soon as possible.', WebUI.getText(findTestObject('Page_AppointmentConfirmation/lbl_Comment')), 
         false)
 }
+
+
 
 WebUI.takeScreenshot()
 WebUI.closeBrowser()
