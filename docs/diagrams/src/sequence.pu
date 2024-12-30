@@ -1,0 +1,13 @@
+@startuml "running_XSLT_in_Katalon_Studio"
+actor "You" as you
+control "Test Cases/processLog" as testcase
+control "log-compaction.xsl" as stylesheet
+database "execution0.log" as input
+database "build/compact-log.xml" as output
+
+you -> testcase : run it
+testcase -> stylesheet : call it
+input -> stylesheet : read it
+stylesheet -> stylesheet: transform it
+stylesheet -> output : write it
+@enduml

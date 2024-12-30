@@ -60,22 +60,93 @@ How can I write such a transformer script?
 
 ## Solution
 
-How to implement a XML-to-XML transformer in Java? I will employ **XSLT** in Java.
-
-XML and XSLT --- Ah, greate but outdated technology. Java Platform supported XML and XSLT in [J2SE1.4](https://en.wikipedia.org/wiki/Java_version_history#J2SE_1.4) in 2002. It's 2 decades ago. I suppose that very few people nowadays can write a code that drives XSLT.
+How to implement a XML-to-XML transformer in Java? Well, I will employ **XSLT** in Java. XML and XSLT --- Ah, these technologies looks outdated. Java Platform supported XML and XSLT in [J2SE1.4](https://en.wikipedia.org/wiki/Java_version_history#J2SE_1.4) in 2002. It's dated 2 decades ago. I believe that very few people nowadays can write a code that drives XSLT.
 
 But I can do it. I love XSLT. Let me show you how to program XSLT in Java.
 
 ## Description
 
+### Test Case script as the transformer
+
+I want to run the following Test Case script:
+
+- [Test Cases/processLog](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/Scripts/processLog/Script1735564727924.groovy)
+
+```
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+
+import javax.xml.parsers.SAXParser
+import javax.xml.parsers.SAXParserFactory
+import javax.xml.transform.Result;
+import javax.xml.transform.Source
+import javax.xml.transform.Transformer
+import javax.xml.transform.TransformerFactory
+import javax.xml.transform.sax.SAXSource
+import javax.xml.transform.stream.StreamResult
+import javax.xml.transform.stream.StreamSource
+
+import org.xml.sax.InputSource
+import org.xml.sax.XMLReader
+
+import com.kms.katalon.core.configuration.RunConfiguration
+
+Path projectDir = Paths.get(RunConfiguration.getProjectDir())
+
+// XSL Stylesheet
+Path stylesheet = projectDir.resolve("src/test/xslt/log-compaction.xsl")
+Source xsltSource = new StreamSource(stylesheet.toFile())
+
+// input XML
+Path log = projectDir.resolve("Reports/20241230_231944/healthcare-tests - TS_RegressionTest/20241230_231944/execution0.log")
+Source xmlSource = createSAXSourceIgnoringDTD(log)
+
+// output XML
+Path outputDir = projectDir.resolve("build/xslt-output")
+Files.createDirectories(outputDir)
+Path outputFile = outputDir.resolve("compact-log.xml")
+Result result = new StreamResult(outputFile.toFile())
+
+// perform XSL Transformation (from XML to XML conversion)
+TransformerFactory trfactory = TransformerFactory.newInstance()
+Transformer transformer = trfactory.newTransformer(xsltSource)
+transformer.transform(xmlSource, result)
+
+/**
+ * create an instance of javax.xml.transform.Source out of an XML file
+ * while ignoring DTD contained in it if any
+ */
+Source createSAXSourceIgnoringDTD(Path xml) {
+	SAXParserFactory spfactory = SAXParserFactory.newInstance()
+	spfactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false)
+	spfactory.setNamespaceAware(true)
+	SAXParser saxParser = spfactory.newSAXParser()
+	XMLReader xmlReader = saxParser.getXMLReader()
+	InputSource inputSource = new InputSource(Files.newInputStream(xml))
+	Source source = new SAXSource(xmlReader, inputSource)
+	return source
+}
+```
+
+
+
+
 ### Input XML
 
-- []
+- [Reports/20241230_231944/healthcare-tests%20-%20TS_RegressionTest/20241230_231944/execution0.log](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/Reports/20241230_231944/healthcare-tests%20-%20TS_RegressionTest/20241230_231944/execution0.log)
+
+This file was created by the `Test Suites/healthcare-tests - TS_RegressionTest`.
+
 ### XSL Stylesheets
+
+- [src/test/xslt/log-compaction.xsl](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/src/test/xslt/log-compaction.xsl)
+
+- [src/test/xslt/identity-transform.xsl](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/src/test/xslt/identity-transform.xsl)
 
 ### Output XML
 
-### Test Case script as the transformer
+- [build/xslt-output/compact-log.xml](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/build/xslt-output/compact-log.xml)
 
 ## Conclusion
 

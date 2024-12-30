@@ -17,10 +17,6 @@ import org.xml.sax.XMLReader
 
 import com.kms.katalon.core.configuration.RunConfiguration
 
-/**
- *
- */
-
 Path projectDir = Paths.get(RunConfiguration.getProjectDir())
 
 // XSL Stylesheet
