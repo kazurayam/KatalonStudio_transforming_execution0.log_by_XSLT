@@ -3,7 +3,10 @@
 /.settings/
 /.classpath
 .svn/
+
 /Reports
+!/Reports/20241230_155630/healthcare-tests - TS_RegressionTest/20241230_155630/execution0.log
+
 /.project
 /.gradle/
 /Drivers/
