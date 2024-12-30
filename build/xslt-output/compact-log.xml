@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?><log>
+    <record>
+        <date>2024-12-30T06:56:35.388280Z</date>
+        <message>Start Test Suite : Test Suites/healthcare-tests - TS_RegressionTest</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.410907Z</date>
+        <message>hostName = kazuakiurayama - localhost</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.412275Z</date>
+        <message>os = Mac OS X 64bit</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.413407Z</date>
+        <message>hostAddress = 127.0.0.1</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.414473Z</date>
+        <message>katalonVersion = 9.0.0.212</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.427998Z</date>
+        <message>Start listener action : sampleBeforeTestSuite</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.464597Z</date>
+        <message>Start action : KatalonHelper.updateInfo()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.553368Z</date>
+        <message>End action : KatalonHelper.updateInfo()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.554039Z</date>
+        <message>End listener action : sampleBeforeTestSuite</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.767084Z</date>
+        <message>Start Test Case : Test Cases/Main Test Cases/TC1_Verify Successful Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.879452Z</date>
+        <message>(Default) Username = John Doe</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:35.912551Z</date>
+        <message>(Default) Password = ThisIsNotAPassword</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.021721Z</date>
+        <message>Start action : comment(&amp;quot;Story: Login to CURA system&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.151964Z</date>
+        <message>Story: Login to CURA system</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.174926Z</date>
+        <message>End action : comment(&amp;quot;Story: Login to CURA system&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.176252Z</date>
+        <message>Start action : comment(&amp;quot;Given that the user has the valid login information&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.191569Z</date>
+        <message>Given that the user has the valid login information</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.196565Z</date>
+        <message>End action : comment(&amp;quot;Given that the user has the valid login information&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.200605Z</date>
+        <message>Start action : openBrowser(G_SiteURL)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.720556Z</date>
+        <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:37.770351Z</date>
+        <message>Action delay is set to 0 milliseconds</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:42.719102Z</date>
+        <message>sessionId = 91f835d870cca7abf180c68c831cb256</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:42.773238Z</date>
+        <message>browser = Chrome 131.0.0.0</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:42.785131Z</date>
+        <message>platform = Mac OS X</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:42.809639Z</date>
+        <message>seleniumVersion = 3.141.59</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:42.831527Z</date>
+        <message>proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&amp;quot;&amp;quot;, isApplyToDesiredCapabilities=true }</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:48.086335Z</date>
+        <message>Browser is opened with url: &amp;apos;http://demoaut.katalon.com&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:48.159404Z</date>
+        <message>End action : openBrowser(G_SiteURL)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:48.179911Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_CuraHomepage/btn_MakeAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:49.115003Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_CuraHomepage/btn_MakeAppointment&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:49.120821Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_CuraHomepage/btn_MakeAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:49.122272Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_Login/txt_UserName&amp;quot;), Username)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:50.225265Z</date>
+        <message>Text &amp;apos;John Doe&amp;apos; is set on object &amp;apos;Object Repository/Page_Login/txt_UserName&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:50.228905Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_Login/txt_UserName&amp;quot;), Username)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:50.229503Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_Login/txt_Password&amp;quot;), Password)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:51.054012Z</date>
+        <message>Text &amp;apos;ThisIsNotAPassword&amp;apos; is set on object &amp;apos;Object Repository/Page_Login/txt_Password&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:51.063743Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_Login/txt_Password&amp;quot;), Password)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:51.064343Z</date>
+        <message>Start action : comment(&amp;quot;When he logins to CURA system&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:51.069278Z</date>
+        <message>When he logins to CURA system</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:51.079173Z</date>
+        <message>End action : comment(&amp;quot;When he logins to CURA system&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:51.079543Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_Login/btn_Login&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.092554Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_Login/btn_Login&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.127482Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_Login/btn_Login&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.146702Z</date>
+        <message>Start action : comment(&amp;quot;Then he should be able to login successfully&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.151412Z</date>
+        <message>Then he should be able to login successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.191133Z</date>
+        <message>End action : comment(&amp;quot;Then he should be able to login successfully&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.199234Z</date>
+        <message>Start action : landingPage = verifyElementPresent(findTestObject(&amp;quot;Page_CuraAppointment/div_Appointment&amp;quot;), G_Timeout)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.551611Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/div_Appointment&amp;apos; is present</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.589579Z</date>
+        <message>End action : landingPage = verifyElementPresent(findTestObject(&amp;quot;Page_CuraAppointment/div_Appointment&amp;quot;), G_Timeout)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.596022Z</date>
+        <message>Start action : closeBrowser()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.947754Z</date>
+        <message>Browser is closed</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.948375Z</date>
+        <message>End action : closeBrowser()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:52.948899Z</date>
+        <message>Test Cases/Main Test Cases/TC1_Verify Successful Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.052267Z</date>
+        <message>Start action : Video</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.052951Z</date>
+        <message>Video recording for test case &amp;apos;Test Cases/Main Test Cases/TC1_Verify Successful Login&amp;apos; .</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.053501Z</date>
+        <message>End End action : Video</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.055195Z</date>
+        <message>End Test Case : Test Cases/Main Test Cases/TC1_Verify Successful Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.061547Z</date>
+        <message>Start Test Case : Test Cases/Main Test Cases/TC2_Verify Successful Appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.303369Z</date>
+        <message>Start action : comment(&amp;quot;Story: Book an appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.310910Z</date>
+        <message>Story: Book an appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.330355Z</date>
+        <message>End action : comment(&amp;quot;Story: Book an appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.338131Z</date>
+        <message>Start action : comment(&amp;quot;Given that the user has logged into their account&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.349437Z</date>
+        <message>Given that the user has logged into their account</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.355685Z</date>
+        <message>End action : comment(&amp;quot;Given that the user has logged into their account&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.360335Z</date>
+        <message>Start action : openBrowser(G_SiteURL)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.376899Z</date>
+        <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:55.384376Z</date>
+        <message>Action delay is set to 0 milliseconds</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:57.734454Z</date>
+        <message>sessionId = 87c452432bb9d9a088167d4cb8bbdbd0</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:58.328999Z</date>
+        <message>browser = Chrome 131.0.0.0</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:58.334776Z</date>
+        <message>platform = Mac OS X</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:58.356317Z</date>
+        <message>seleniumVersion = 3.141.59</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:56:58.399696Z</date>
+        <message>proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&amp;quot;&amp;quot;, isApplyToDesiredCapabilities=true }</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.388399Z</date>
+        <message>Browser is opened with url: &amp;apos;http://demoaut.katalon.com&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.435464Z</date>
+        <message>End action : openBrowser(G_SiteURL)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.454646Z</date>
+        <message>Start action : callTestCase(findTestCase(&amp;quot;Common Test Cases/Login&amp;quot;), [&amp;quot;Username&amp;quot;:&amp;quot;John Doe&amp;quot;, &amp;quot;Password&amp;quot;:&amp;quot;ThisIsNotAPassword&amp;quot;], STOP_ON_FAILURE)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.594484Z</date>
+        <message>Start Test Case : Test Cases/Common Test Cases/Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.614572Z</date>
+        <message>Username = John Doe</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.615215Z</date>
+        <message>Password = ThisIsNotAPassword</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:04.774741Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_CuraHomepage/btn_MakeAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:07.421721Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_CuraHomepage/btn_MakeAppointment&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:07.426867Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_CuraHomepage/btn_MakeAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:07.427372Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_Login/txt_UserName&amp;quot;), Username)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:11.451785Z</date>
+        <message>Text &amp;apos;John Doe&amp;apos; is set on object &amp;apos;Object Repository/Page_Login/txt_UserName&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:11.455825Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_Login/txt_UserName&amp;quot;), Username)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:11.456280Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_Login/txt_Password&amp;quot;), Password)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:15.018200Z</date>
+        <message>Text &amp;apos;ThisIsNotAPassword&amp;apos; is set on object &amp;apos;Object Repository/Page_Login/txt_Password&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:15.021146Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_Login/txt_Password&amp;quot;), Password)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:15.021667Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_Login/btn_Login&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:17.545958Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_Login/btn_Login&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:17.559557Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_Login/btn_Login&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:17.562491Z</date>
+        <message>Start action : landingPage = verifyElementPresent(findTestObject(&amp;quot;Page_CuraAppointment/div_Appointment&amp;quot;), G_Timeout)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.944569Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/div_Appointment&amp;apos; is present</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.945250Z</date>
+        <message>End action : landingPage = verifyElementPresent(findTestObject(&amp;quot;Page_CuraAppointment/div_Appointment&amp;quot;), G_Timeout)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.945835Z</date>
+        <message>Test Cases/Common Test Cases/Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.948334Z</date>
+        <message>End Test Case : Test Cases/Common Test Cases/Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.957079Z</date>
+        <message>Call Test Case &amp;apos;Test Cases/Common Test Cases/Login&amp;apos; successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.968482Z</date>
+        <message>End action : callTestCase(findTestCase(&amp;quot;Common Test Cases/Login&amp;quot;), [&amp;quot;Username&amp;quot;:&amp;quot;John Doe&amp;quot;, &amp;quot;Password&amp;quot;:&amp;quot;ThisIsNotAPassword&amp;quot;], STOP_ON_FAILURE)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.969334Z</date>
+        <message>Start action : comment(&amp;quot;And Appointment page is displayed&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.973229Z</date>
+        <message>And Appointment page is displayed</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.978957Z</date>
+        <message>End action : comment(&amp;quot;And Appointment page is displayed&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.979725Z</date>
+        <message>Start action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:18.985011Z</date>
+        <message>Start action : selectOptionByLabel(findTestObject(&amp;quot;Page_CuraAppointment/lst_Facility&amp;quot;), &amp;quot;Hongkong CURA Healthcare Center&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:23.002279Z</date>
+        <message>All options with label &amp;apos;Hongkong CURA Healthcare Center&amp;apos; are selected in object &amp;apos;Object Repository/Page_CuraAppointment/lst_Facility&amp;apos; </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:23.005335Z</date>
+        <message>End action : selectOptionByLabel(findTestObject(&amp;quot;Page_CuraAppointment/lst_Facility&amp;quot;), &amp;quot;Hongkong CURA Healthcare Center&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:23.005932Z</date>
+        <message>Start action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Medicaid&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:25.016847Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/chk_Medicaid&amp;apos; is checked</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:25.019849Z</date>
+        <message>End action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Medicaid&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:25.020375Z</date>
+        <message>Start action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Readmission&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:27.013380Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/chk_Readmission&amp;apos; is checked</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:27.015866Z</date>
+        <message>End action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Readmission&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:27.016446Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_VisitDate&amp;quot;), &amp;quot;27/12/2016&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:31.079277Z</date>
+        <message>Text &amp;apos;27/12/2016&amp;apos; is set on object &amp;apos;Object Repository/Page_CuraAppointment/txt_VisitDate&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:31.084712Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_VisitDate&amp;quot;), &amp;quot;27/12/2016&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:31.089452Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_Comment&amp;quot;), &amp;quot;Please make appointment as soon as possible.&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.049962Z</date>
+        <message>Text &amp;apos;Please make appointment as soon as possible.&amp;apos; is set on object &amp;apos;Object Repository/Page_CuraAppointment/txt_Comment&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.051790Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_Comment&amp;quot;), &amp;quot;Please make appointment as soon as possible.&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.052545Z</date>
+        <message>End action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.052876Z</date>
+        <message>Start action : comment(&amp;quot;When he fills in valid information in Appointment page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.055201Z</date>
+        <message>When he fills in valid information in Appointment page</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.057756Z</date>
+        <message>End action : comment(&amp;quot;When he fills in valid information in Appointment page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:35.058479Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_CuraAppointment/btn_BookAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:37.261613Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_CuraAppointment/btn_BookAppointment&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:37.267358Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_CuraAppointment/btn_BookAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:37.267935Z</date>
+        <message>Start action : verifyTextPresent(&amp;quot;Appointment Confirmation&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:38.991011Z</date>
+        <message>Text &amp;apos;Appointment Confirmation&amp;apos; is present on page </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:38.997895Z</date>
+        <message>End action : verifyTextPresent(&amp;quot;Appointment Confirmation&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:38.998678Z</date>
+        <message>Start action : comment(&amp;quot;Then he should be able to book a new appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:39.002410Z</date>
+        <message>Then he should be able to book a new appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:39.035868Z</date>
+        <message>End action : comment(&amp;quot;Then he should be able to book a new appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:39.036526Z</date>
+        <message>Start action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:39.040986Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Hongkong CURA Healthcare Center&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Facility&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:40.964696Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_Facility&amp;apos; is: &amp;apos;Hongkong CURA Healthcare Center&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:40.997415Z</date>
+        <message>Actual text &amp;apos;Hongkong CURA Healthcare Center&amp;apos; and expected text &amp;apos;Hongkong CURA Healthcare Center&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:41.022669Z</date>
+        <message>End action : verifyMatch(&amp;quot;Hongkong CURA Healthcare Center&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Facility&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:41.023270Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Yes&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_HospitalReadmission&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:42.949685Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_HospitalReadmission&amp;apos; is: &amp;apos;Yes&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:42.953224Z</date>
+        <message>Actual text &amp;apos;Yes&amp;apos; and expected text &amp;apos;Yes&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:42.955472Z</date>
+        <message>End action : verifyMatch(&amp;quot;Yes&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_HospitalReadmission&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:42.955897Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Medicaid&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Program&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:44.956564Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_Program&amp;apos; is: &amp;apos;Medicaid&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:44.959273Z</date>
+        <message>Actual text &amp;apos;Medicaid&amp;apos; and expected text &amp;apos;Medicaid&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:44.962249Z</date>
+        <message>End action : verifyMatch(&amp;quot;Medicaid&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Program&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:44.962705Z</date>
+        <message>Start action : verifyMatch(&amp;quot;27/12/2016&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_VisitDate&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:46.949992Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_VisitDate&amp;apos; is: &amp;apos;27/12/2016&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:46.951952Z</date>
+        <message>Actual text &amp;apos;27/12/2016&amp;apos; and expected text &amp;apos;27/12/2016&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:46.957291Z</date>
+        <message>End action : verifyMatch(&amp;quot;27/12/2016&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_VisitDate&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:46.957731Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Please make appointment as soon as possible.&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Comment&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:48.948423Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_Comment&amp;apos; is: &amp;apos;Please make appointment as soon as possible.&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:48.950858Z</date>
+        <message>Actual text &amp;apos;Please make appointment as soon as possible.&amp;apos; and expected text &amp;apos;Please make appointment as soon as possible.&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:48.953468Z</date>
+        <message>End action : verifyMatch(&amp;quot;Please make appointment as soon as possible.&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Comment&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:48.953891Z</date>
+        <message>End action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:48.954134Z</date>
+        <message>Start action : takeScreenshot()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:51.726222Z</date>
+        <message>Taking screenshot successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:51.732624Z</date>
+        <message>End action : takeScreenshot()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:51.733207Z</date>
+        <message>Start action : closeBrowser()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:52.048067Z</date>
+        <message>Browser is closed</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:52.048640Z</date>
+        <message>End action : closeBrowser()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:52.049970Z</date>
+        <message>Test Cases/Main Test Cases/TC2_Verify Successful Appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.180741Z</date>
+        <message>Start action : Video</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.181310Z</date>
+        <message>Video recording for test case &amp;apos;Test Cases/Main Test Cases/TC2_Verify Successful Appointment&amp;apos; .</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.182264Z</date>
+        <message>End End action : Video</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.183612Z</date>
+        <message>End Test Case : Test Cases/Main Test Cases/TC2_Verify Successful Appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.188623Z</date>
+        <message>Start Test Case : Test Cases/Main Test Cases/TC3_Visual Testing Example</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.395308Z</date>
+        <message>Start action : comment(&amp;quot;Story: Book an appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.401151Z</date>
+        <message>Story: Book an appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.407894Z</date>
+        <message>End action : comment(&amp;quot;Story: Book an appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.409668Z</date>
+        <message>Start action : comment(&amp;quot;Given that the user has logged into their account&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.420669Z</date>
+        <message>Given that the user has logged into their account</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.423616Z</date>
+        <message>End action : comment(&amp;quot;Given that the user has logged into their account&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.423991Z</date>
+        <message>Start action : openBrowser(G_SiteURL)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.463560Z</date>
+        <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:54.474448Z</date>
+        <message>Action delay is set to 0 milliseconds</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:57.001252Z</date>
+        <message>sessionId = 1372339a484ed04019655138cff57543</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:57.034437Z</date>
+        <message>browser = Chrome 131.0.0.0</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:57.047773Z</date>
+        <message>platform = Mac OS X</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:57.068821Z</date>
+        <message>seleniumVersion = 3.141.59</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:57:57.107877Z</date>
+        <message>proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&amp;quot;&amp;quot;, isApplyToDesiredCapabilities=true }</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:03.065361Z</date>
+        <message>Browser is opened with url: &amp;apos;http://demoaut.katalon.com&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:03.144352Z</date>
+        <message>End action : openBrowser(G_SiteURL)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:03.163133Z</date>
+        <message>Start action : takeScreenshotAsCheckpoint(&amp;quot;login page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:06.190719Z</date>
+        <message>0 hidden object(s)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.424515Z</date>
+        <message>Taking screenshot successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.429393Z</date>
+        <message>End action : takeScreenshotAsCheckpoint(&amp;quot;login page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.429854Z</date>
+        <message>Start action : callTestCase(findTestCase(&amp;quot;Common Test Cases/Login&amp;quot;), [&amp;quot;Username&amp;quot;:&amp;quot;John Doe&amp;quot;, &amp;quot;Password&amp;quot;:&amp;quot;ThisIsNotAPassword&amp;quot;], STOP_ON_FAILURE)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.493635Z</date>
+        <message>Start Test Case : Test Cases/Common Test Cases/Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.516284Z</date>
+        <message>Username = John Doe</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.517029Z</date>
+        <message>Password = ThisIsNotAPassword</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:07.519763Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_CuraHomepage/btn_MakeAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:09.489374Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_CuraHomepage/btn_MakeAppointment&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:09.491050Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_CuraHomepage/btn_MakeAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:09.491763Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_Login/txt_UserName&amp;quot;), Username)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:13.422323Z</date>
+        <message>Text &amp;apos;John Doe&amp;apos; is set on object &amp;apos;Object Repository/Page_Login/txt_UserName&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:13.426115Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_Login/txt_UserName&amp;quot;), Username)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:13.426660Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_Login/txt_Password&amp;quot;), Password)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:17.174543Z</date>
+        <message>Text &amp;apos;ThisIsNotAPassword&amp;apos; is set on object &amp;apos;Object Repository/Page_Login/txt_Password&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:17.176948Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_Login/txt_Password&amp;quot;), Password)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:17.177393Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_Login/btn_Login&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:19.538586Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_Login/btn_Login&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:19.557799Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_Login/btn_Login&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:19.558224Z</date>
+        <message>Start action : landingPage = verifyElementPresent(findTestObject(&amp;quot;Page_CuraAppointment/div_Appointment&amp;quot;), G_Timeout)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.943502Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/div_Appointment&amp;apos; is present</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.944474Z</date>
+        <message>End action : landingPage = verifyElementPresent(findTestObject(&amp;quot;Page_CuraAppointment/div_Appointment&amp;quot;), G_Timeout)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.945044Z</date>
+        <message>Test Cases/Common Test Cases/Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.945643Z</date>
+        <message>End Test Case : Test Cases/Common Test Cases/Login</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.946269Z</date>
+        <message>Call Test Case &amp;apos;Test Cases/Common Test Cases/Login&amp;apos; successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.948955Z</date>
+        <message>End action : callTestCase(findTestCase(&amp;quot;Common Test Cases/Login&amp;quot;), [&amp;quot;Username&amp;quot;:&amp;quot;John Doe&amp;quot;, &amp;quot;Password&amp;quot;:&amp;quot;ThisIsNotAPassword&amp;quot;], STOP_ON_FAILURE)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.949436Z</date>
+        <message>Start action : comment(&amp;quot;And Appointment page is displayed&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.951902Z</date>
+        <message>And Appointment page is displayed</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.954413Z</date>
+        <message>End action : comment(&amp;quot;And Appointment page is displayed&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.954804Z</date>
+        <message>Start action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:20.957442Z</date>
+        <message>Start action : takeScreenshotAsCheckpoint(&amp;quot;appointment page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:25.093249Z</date>
+        <message>0 hidden object(s)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:25.729541Z</date>
+        <message>Taking screenshot successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:25.740119Z</date>
+        <message>End action : takeScreenshotAsCheckpoint(&amp;quot;appointment page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:25.740750Z</date>
+        <message>Start action : selectOptionByLabel(findTestObject(&amp;quot;Page_CuraAppointment/lst_Facility&amp;quot;), &amp;quot;Hongkong CURA Healthcare Center&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:26.432321Z</date>
+        <message>All options with label &amp;apos;Hongkong CURA Healthcare Center&amp;apos; are selected in object &amp;apos;Object Repository/Page_CuraAppointment/lst_Facility&amp;apos; </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:26.435948Z</date>
+        <message>End action : selectOptionByLabel(findTestObject(&amp;quot;Page_CuraAppointment/lst_Facility&amp;quot;), &amp;quot;Hongkong CURA Healthcare Center&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:26.436410Z</date>
+        <message>Start action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Medicaid&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:26.882289Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/chk_Medicaid&amp;apos; is checked</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:26.885706Z</date>
+        <message>End action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Medicaid&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:26.888137Z</date>
+        <message>Start action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Readmission&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:27.312272Z</date>
+        <message>Object &amp;apos;Object Repository/Page_CuraAppointment/chk_Readmission&amp;apos; is checked</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:27.314908Z</date>
+        <message>End action : check(findTestObject(&amp;quot;Page_CuraAppointment/chk_Readmission&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:27.315558Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_VisitDate&amp;quot;), &amp;quot;27/12/2016&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:28.289204Z</date>
+        <message>Text &amp;apos;27/12/2016&amp;apos; is set on object &amp;apos;Object Repository/Page_CuraAppointment/txt_VisitDate&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:28.291902Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_VisitDate&amp;quot;), &amp;quot;27/12/2016&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:28.292351Z</date>
+        <message>Start action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_Comment&amp;quot;), &amp;quot;Please make appointment as soon as possible.&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.025370Z</date>
+        <message>Text &amp;apos;Please make appointment as soon as possible.&amp;apos; is set on object &amp;apos;Object Repository/Page_CuraAppointment/txt_Comment&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.027882Z</date>
+        <message>End action : setText(findTestObject(&amp;quot;Page_CuraAppointment/txt_Comment&amp;quot;), &amp;quot;Please make appointment as soon as possible.&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.028370Z</date>
+        <message>End action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.028643Z</date>
+        <message>Start action : comment(&amp;quot;When he fills in valid information in Appointment page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.031489Z</date>
+        <message>When he fills in valid information in Appointment page</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.035715Z</date>
+        <message>End action : comment(&amp;quot;When he fills in valid information in Appointment page&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.036165Z</date>
+        <message>Start action : click(findTestObject(&amp;quot;Page_CuraAppointment/btn_BookAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.694661Z</date>
+        <message>Object: &amp;apos;Object Repository/Page_CuraAppointment/btn_BookAppointment&amp;apos; is clicked on</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.699064Z</date>
+        <message>End action : click(findTestObject(&amp;quot;Page_CuraAppointment/btn_BookAppointment&amp;quot;))</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.699642Z</date>
+        <message>Start action : verifyTextPresent(&amp;quot;Appointment Confirmation&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:29.997687Z</date>
+        <message>Text &amp;apos;Appointment Confirmation&amp;apos; is present on page </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.001431Z</date>
+        <message>End action : verifyTextPresent(&amp;quot;Appointment Confirmation&amp;quot;, false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.005315Z</date>
+        <message>Start action : comment(&amp;quot;Then he should be able to book a new appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.008275Z</date>
+        <message>Then he should be able to book a new appointment</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.015274Z</date>
+        <message>End action : comment(&amp;quot;Then he should be able to book a new appointment&amp;quot;)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.017945Z</date>
+        <message>Start action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.020680Z</date>
+        <message>Start action : takeFullPageScreenshotAsCheckpoint(&amp;quot;booked appointment&amp;quot;, [findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_VisitDate&amp;quot;)])</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.072816Z</date>
+        <message>Timeout &amp;apos;0&amp;apos; is invalid. Using default page load timeout: &amp;apos;30&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:30.353427Z</date>
+        <message>1 hidden object(s)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:34.721405Z</date>
+        <message>0 hidden object(s)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:36.149458Z</date>
+        <message>Taking screenshot successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:36.163806Z</date>
+        <message>End action : takeFullPageScreenshotAsCheckpoint(&amp;quot;booked appointment&amp;quot;, [findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_VisitDate&amp;quot;)])</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:36.167931Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Hongkong CURA Healthcare Center&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Facility&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:37.964218Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_Facility&amp;apos; is: &amp;apos;Hongkong CURA Healthcare Center&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:37.966582Z</date>
+        <message>Actual text &amp;apos;Hongkong CURA Healthcare Center&amp;apos; and expected text &amp;apos;Hongkong CURA Healthcare Center&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:37.969946Z</date>
+        <message>End action : verifyMatch(&amp;quot;Hongkong CURA Healthcare Center&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Facility&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:37.970314Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Yes&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_HospitalReadmission&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:39.951229Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_HospitalReadmission&amp;apos; is: &amp;apos;Yes&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:39.953294Z</date>
+        <message>Actual text &amp;apos;Yes&amp;apos; and expected text &amp;apos;Yes&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:39.957621Z</date>
+        <message>End action : verifyMatch(&amp;quot;Yes&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_HospitalReadmission&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:39.958043Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Medicaid&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Program&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:42.052233Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_Program&amp;apos; is: &amp;apos;Medicaid&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:42.055237Z</date>
+        <message>Actual text &amp;apos;Medicaid&amp;apos; and expected text &amp;apos;Medicaid&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:42.057480Z</date>
+        <message>End action : verifyMatch(&amp;quot;Medicaid&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Program&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:42.057812Z</date>
+        <message>Start action : verifyMatch(&amp;quot;27/12/2016&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_VisitDate&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:43.948888Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_VisitDate&amp;apos; is: &amp;apos;27/12/2016&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:43.951016Z</date>
+        <message>Actual text &amp;apos;27/12/2016&amp;apos; and expected text &amp;apos;27/12/2016&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:43.953122Z</date>
+        <message>End action : verifyMatch(&amp;quot;27/12/2016&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_VisitDate&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:43.953454Z</date>
+        <message>Start action : verifyMatch(&amp;quot;Please make appointment as soon as possible.&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Comment&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:45.957995Z</date>
+        <message>Text of object &amp;apos;Object Repository/Page_AppointmentConfirmation/lbl_Comment&amp;apos; is: &amp;apos;Please make appointment as soon as possible.&amp;apos;</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:45.961090Z</date>
+        <message>Actual text &amp;apos;Please make appointment as soon as possible.&amp;apos; and expected text &amp;apos;Please make appointment as soon as possible.&amp;apos; are matched </message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:45.963405Z</date>
+        <message>End action : verifyMatch(&amp;quot;Please make appointment as soon as possible.&amp;quot;, getText(findTestObject(&amp;quot;Page_AppointmentConfirmation/lbl_Comment&amp;quot;)), false)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:45.963773Z</date>
+        <message>End action : if (true)</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:45.963986Z</date>
+        <message>Start action : takeScreenshot()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:50.344971Z</date>
+        <message>Taking screenshot successfully</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:50.349051Z</date>
+        <message>End action : takeScreenshot()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:50.349644Z</date>
+        <message>Start action : closeBrowser()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:50.690315Z</date>
+        <message>Browser is closed</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:50.690772Z</date>
+        <message>End action : closeBrowser()</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:50.691280Z</date>
+        <message>Test Cases/Main Test Cases/TC3_Visual Testing Example</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:52.860321Z</date>
+        <message>Start action : Video</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:52.860939Z</date>
+        <message>Video recording for test case &amp;apos;Test Cases/Main Test Cases/TC3_Visual Testing Example&amp;apos; .</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:52.861458Z</date>
+        <message>End End action : Video</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:52.863191Z</date>
+        <message>End Test Case : Test Cases/Main Test Cases/TC3_Visual Testing Example</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:52.863745Z</date>
+        <message>Start listener action : exportKatalonReports</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:53.242705Z</date>
+        <message>Start generating HTML report folder at: /Users/kazuakiurayama/katalon-workspace/KatalonStudio_transforming_execution0.log_by_XSLT/Reports/20241230_155630/healthcare-tests - TS_RegressionTest/20241230_155630...</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:54.906665Z</date>
+        <message>HTML report generated</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:54.907523Z</date>
+        <message>Start generating CSV report folder at: /Users/kazuakiurayama/katalon-workspace/KatalonStudio_transforming_execution0.log_by_XSLT/Reports/20241230_155630/healthcare-tests - TS_RegressionTest/20241230_155630...</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:54.932985Z</date>
+        <message>CSV report generated</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:54.967153Z</date>
+        <message>End listener action : exportKatalonReports</message>
+    </record>
+    <record>
+        <date>2024-12-30T06:58:54.999851Z</date>
+        <message>End Test Suite : Test Suites/healthcare-tests - TS_RegressionTest</message>
+    </record>
+</log>
