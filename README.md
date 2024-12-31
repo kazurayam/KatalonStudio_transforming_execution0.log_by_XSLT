@@ -80,7 +80,7 @@ But I can do it. I love XSLT. Let me show you how to program XSLT in Katalon Stu
 
 ### Test Case script as the transformer
 
-The following is the Test Case script that executes XSLT throw [Java API for XML Processing]()
+The following is the Test Case script that executes XSLT throw [Java API for XML Processing](https://en.wikipedia.org/wiki/Java_API_for_XML_Processing).
 
 - [Test Cases/processLog](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/Scripts/processLog/Script1735564727924.groovy)
 
