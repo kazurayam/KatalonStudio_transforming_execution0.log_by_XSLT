@@ -177,10 +177,10 @@ This file was created by the `Test Suites/healthcare-tests - TS_RegressionTest`.
   </xsl:template>
 
   <xsl:template match="record">
-  	<record>
-    	<xsl:apply-templates select="date"/>
+    <record>
+      <xsl:apply-templates select="date"/>
       <xsl:apply-templates select="level"/>
-    	<xsl:apply-templates select="message"/>
+      <xsl:apply-templates select="message"/>
     </record>
   </xsl:template>
 
@@ -199,7 +199,7 @@ This file was created by the `Test Suites/healthcare-tests - TS_RegressionTest`.
 </xsl:transform>
 ```
 
-The stylesheet does everything to transform the input XML into the output. It's such concise. I love the expressiveness of XSLT.
+The stylesheet does everything needed to transform the input XML into the output. It's such concise. I love the expressiveness of XSLT.
 
 ### Output XML
 
@@ -242,4 +242,4 @@ The stylesheet does everything to transform the input XML into the output. It's 
 
 ## Conclusion
 
-I demonstrated a Test Case script in Katalon Studio, that transforms a larget `execution0.log` file into a far smaller XML file. The Test Case script employed XSLT. The XSLT processing in Java is powerful; but I am afraid that very few people understand it. I hope this demonstration would motivate you to look into this state-of-the art.
+I demonstrated a Test Case script in Katalon Studio, that transforms a large `execution0.log` file into a far smaller XML file. The Test Case script employed XSLT. The XSLT processing in Java is powerful; but I am afraid that very few people understand it. I hope this demonstration would motivate you to look into XSLT, a state-of-the art.
