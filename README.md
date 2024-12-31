@@ -66,9 +66,21 @@ But I can do it. I love XSLT. Let me show you how to program XSLT in Java.
 
 ## Description
 
+### Processing overview
+
+![sequence](https://kazurayam.github.io/KatalonStudio_transforming_execution0.log_by_XSLT/diagrams/out/sequence/running_XSLT_in_Katalon_Studio.png)
+
+1. You want to open this project, run the `Test Cases/processLog`
+2. The `processLog` invokes XSLT while giving the `src/test/xslt/log-compaction.xsl` file as the stylesheet.
+3. The stylesheet reads the `execution0.log` file as input
+4. The stylesheet transforms it.
+   - it will choose `<record>` elements which have child `<level>` element of which content text is `FAILED`. All the other `<record>` elements are ignored.
+   - it will convert the content text of `<date>` element from `2024-12-30T14:20:34.nnnnnnZ` -> `2024-12-30 14:20:34`. It chomps of the `T` and `Z`. It trims the digits as milli-seconds.
+5. The stylesheet writes an output XML file. The output file conly contains `<records>` with level of `FAILED`; the `<date>` text is simplified.
+
 ### Test Case script as the transformer
 
-I want to run the following Test Case script:
+The following is the Test Case script that executes XSLT throw [Java API for XML Processing]()
 
 - [Test Cases/processLog](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/Scripts/processLog/Script1735564727924.groovy)
 
@@ -129,10 +141,14 @@ Source createSAXSourceIgnoringDTD(Path xml) {
 }
 ```
 
+To learn more about XSLT in Java, read the following web article:
 
+- [Baeldung, "Understanding XSLT Processing in Java"](https://www.baeldung.com/java-extensible-stylesheet-language-transformations)
 
 
 ### Input XML
+
+The input XML is large. So please click the following link to have a look at it.
 
 - [Reports/20241230_231944/healthcare-tests%20-%20TS_RegressionTest/20241230_231944/execution0.log](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/Reports/20241230_231944/healthcare-tests%20-%20TS_RegressionTest/20241230_231944/execution0.log)
 
@@ -142,11 +158,88 @@ This file was created by the `Test Suites/healthcare-tests - TS_RegressionTest`.
 
 - [src/test/xslt/log-compaction.xsl](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/src/test/xslt/log-compaction.xsl)
 
-- [src/test/xslt/identity-transform.xsl](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/src/test/xslt/identity-transform.xsl)
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:import href="./identity-transform.xsl"/>
+
+  <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+
+  <xsl:template match="/">
+  	<xsl:apply-templates select="*"/>
+  </xsl:template>
+
+  <xsl:template match="log">
+    <log>
+      <xsl:apply-templates select="record[contains(level,'FAILED')]"/>
+    </log>
+  </xsl:template>
+
+  <xsl:template match="record">
+  	<record>
+    	<xsl:apply-templates select="date"/>
+      <xsl:apply-templates select="level"/>
+    	<xsl:apply-templates select="message"/>
+    </record>
+  </xsl:template>
+
+  <!--
+  we will convert
+    <date>2024-12-30T14:20:35.937395Z</date>
+  to
+    <date>2024-12-30 14:20:35</date>
+  -->
+  <xsl:template match="date">
+    <date><xsl:value-of select="concat(substring-before(.,'T'),
+                                ' ',
+                                substring(substring-after(.,'T'), 1, 8))" /></date>
+  </xsl:template>
+
+</xsl:transform>
+```
+
+The stylesheet does everything to transform the input XML into the output. It's such concise. I love the expressiveness of XSLT.
 
 ### Output XML
 
 - [build/xslt-output/compact-log.xml](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/build/xslt-output/compact-log.xml)
 
+```
+<?xml version="1.0" encoding="UTF-8"?><log>
+    <record>
+        <date>2024-12-30 14:20:34</date>
+        <level>FAILED</level>
+        <message>Text &amp;apos;Appointment Confirmation&amp;apos; is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text &amp;apos;Appointment Confirmation&amp;apos; is present on page
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1756)
+	at TC2_Verify Successful Appointment.run(TC2_Verify Successful Appointment:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at TempTestSuite1735568384756.run(TempTestSuite1735568384756.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)</message>
+    </record>
+...
+```
+
 ## Conclusion
 
+I demonstrated a Test Case script in Katalon Studio, that transforms a larget `execution0.log` file into a far smaller XML file. The Test Case script employed XSLT. The XSLT processing in Java is powerful; but I am afraid that very few people understand it. I hope this demonstration would motivate you to look into this state-of-the art.
