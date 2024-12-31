@@ -74,9 +74,9 @@ But I can do it. I love XSLT. Let me show you how to program XSLT in Katalon Stu
 2. The `processLog` invokes XSLT while giving the `src/test/xslt/log-compaction.xsl` file as the stylesheet.
 3. The stylesheet reads the `execution0.log` file as input
 4. The stylesheet transforms it.
-   - it will choose `<record>` elements which have child `<level>` element of which content text is `FAILED`. All the other `<record>` elements are ignored.
-   - it will convert the content text of `<date>` element from `2024-12-30T14:20:34.nnnnnnZ` -> `2024-12-30 14:20:34`. It chomps of the `T` and `Z`. It trims the digits as milli-seconds.
-5. The stylesheet writes an output XML file. The output file conly contains `<records>` with level of `FAILED`; the `<date>` text is simplified.
+   - It will filter `<record>` elements by the child `<level>` element. It will pick the `<record>` with child `<level>FAILED</level>`. Other `<record>` elements will be ignored.
+   - It will convert the content text of `<date>` element from `2024-12-30T14:20:34.nnnnnnZ` -> `2024-12-30 14:20:34`. It chomps off the `T` and `Z` characters. It trims the digits as milli-seconds.
+5. The stylesheet writes an output XML file, which is far smaller in size.
 
 ### Test Case script as the transformer
 
