@@ -6,11 +6,11 @@
 
 ## Problem to solve
 
-In most Katalon Studio projects, you would have files named `execution0.log` under the `Reports` folder. For example, my project currently has the following one at the time of authoring:
+In most Katalon Studio projects, there are files named `execution0.log` under the `Reports` folder. For example, my project currently has the following one at the time of authoring:
 
 - `<projectDir>/Reports/20241230_231944/healthcare-tests - TS_RegressionTest/20241230_231944/execution0.log`
 
-The `exection0.log` file contains all log records of your Test Suite execution. I checked the metrics of this file.
+The `exection0.log` file contains all log records of your Test Suite execution. I checked the size metrics of this file.
 
 ```
 $ wc Reports/20241230_231944/healthcare-tests - TS_RegressionTest/20241230_231944/execution0.log
@@ -50,11 +50,14 @@ The file contains 6K lines. Its size is 161 Kbytes. This file is too large to lo
 ...
 ```
 
-In the Katalon Community, there was a topic titled: ["Configuration on logs execution file" raised by testlms21102024](https://forum.katalon.com/t/configuration-on-logs-execution-file/159728). The original poster wanted to customize the `execution0.log` file so that it should print the `<date>` text in a shorter format: `2024-12-30T14:19:51.186102Z` -> `2024-12-30 14:19:51`.
+In the Katalon Community, there was a topic titled: ["Configuration on logs execution file" raised by testlms21102024](https://forum.katalon.com/t/configuration-on-logs-execution-file/159728). The original poster wanted to customize the `execution0.log` file so that:
 
-Unfortunately Katalon Studio does not support customizing the `execution0.log` file. We have to accept the current format. But we would be able to develop a Groovy script that transforms the `execution0.log` file into another format.
+- He wanted `<date>` and `<message>` only. He wanted to remove other data items, such as `<millis>`, `<nanos>`, `<sequence>`, etc.
+- He wanted `<date>` to be printed in a shorter format: `2024-12-30T14:19:51.186102Z` -> `2024-12-30 14:19:51`
 
-How can I write such a transformer script?
+Unfortunately Katalon Studio does not support customizing the `execution0.log` file. We have to accept the current format.
+
+But we should be able to transforms the `execution0.log` files into another format. How can I write such a transformer script in Katalon Studio?
 
 ## Solution
 
@@ -75,12 +78,13 @@ But I can do it. I love XSLT. Let me show you how to program XSLT in Katalon Stu
 3. The stylesheet reads the `execution0.log` file as input
 4. The stylesheet transforms it.
    - It will filter `<record>` elements by the child `<level>` element. It will pick the `<record>` with child `<level>FAILED</level>`. Other `<record>` elements will be ignored.
+   - It will choose `<date>`, `<level>` and `<message>` out of a `<record>`; will ignore other elements
    - It will convert the content text of `<date>` element from `2024-12-30T14:20:34.nnnnnnZ` -> `2024-12-30 14:20:34`. It chomps off the `T` and `Z` characters. It trims the digits as milli-seconds.
 5. The stylesheet writes an output XML file, which is far smaller in size.
 
 ### Test Case script as the transformer
 
-The following is the Test Case script that executes XSLT throw [Java API for XML Processing](https://en.wikipedia.org/wiki/Java_API_for_XML_Processing).
+The following is the Test Case script that executes XSLT through the [Java API for XML Processing](https://en.wikipedia.org/wiki/Java_API_for_XML_Processing) (JAXP).
 
 - [Test Cases/processLog](https://github.com/kazurayam/KatalonStudio_transforming_execution0.log_by_XSLT/blob/main/Scripts/processLog/Script1735564727924.groovy)
 
@@ -242,4 +246,4 @@ The stylesheet does everything needed to transform the input XML into the output
 
 ## Conclusion
 
-I demonstrated a Test Case script in Katalon Studio, that transforms a large `execution0.log` file into a far smaller XML file. The Test Case script employed XSLT. The XSLT processing in Java is powerful; but I am afraid that very few people understand it. I hope this demonstration would motivate you to look into XSLT, a state-of-the art.
+I demonstrated a Test Case script in Katalon Studio, that transforms a large `execution0.log` file into a far smaller XML file. The Test Case script employed XSLT. The XSLT processing in Java is powerful; but I am afraid that very few people understand it. I hope this demonstration would motivate you to look into XSLT, a state of the art.
